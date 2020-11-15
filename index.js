@@ -9,8 +9,6 @@
         // allpossibles arrayinden bu dolan cell i sil
         // komsularinin allpossibles arrayinin icindeki possibles arraylerinden bu numarayi sil
 
-    // else  
-
 
     // ISLEMLER DOGRU FAKAT UYGULAMA SIRASINDAN KAYNAKLI SACMALAYABILIYOR ZORLARDA
 
@@ -121,6 +119,7 @@ function sudokuSolver(board) {
                             else return pos;
                         })
                             
+                        // checking process and debugging
                         // console.log(" ")
                         // console.log("----------------")
                         // console.log({i,j,num}, allPossibles)
@@ -262,9 +261,7 @@ function sudokuSolver(board) {
 
     while (allPossibles.find(cell => cell.possibles.length >= 1)) {
         checkCells(allPossibles);
-        // console.log(allPossibles)
     }
-
 
     console.log(board[0].join("|"))
     console.log(board[1].join("|"))
@@ -319,7 +316,7 @@ function sudokuSolver(board) {
 // ]))
 
 
-// sikintili - hard
+// sikintili - hard - some issues on it
 // console.log(sudokuSolver([
 //     ["-","-","7","-","-","-","3","-","2"],
 //     ["2","-","-","-","-","5","-","1","-"],
@@ -333,7 +330,7 @@ function sudokuSolver(board) {
 // ]))
 
 
-// expert
+// expert - issues
 
 // console.log(sudokuSolver([
 //     ["-","-","-","-","6","-","-","2","7"],
@@ -346,25 +343,3 @@ function sudokuSolver(board) {
 //     ["7","2","-","1","-","-","-","-","-"],
 //     ["-","9","-","-","-","-","2","-","-"],
 // ]))
-
-// console.log(sudokuSolver([
-//     ["-","-","3","-","6","-","-","2","7"],
-//     ["-","-","7","-","-","-","-","1","5"],
-//     ["2","5","4","7","9","1","-","8","-"],
-//     ["-","3","8","9","1","2","-","-","4"],
-//     ["-","-","-","4","3","7","-","-","-"],
-//     ["4","7","-","-","8","-","1","3","-"],
-//     ["3","4","-","-","-","9","-","-","1"],
-//     ["7","2","-","1","-","-","-","-","-"],
-//     ["8","9","1","-","-","-","2","-","-"],
-// ]))
-
-
-// 9|1|3|8|6|5|4|2|7
-// 6|8|7|2|4|3|9|1|5
-// 2|5|4|7|9|1|6|8|3
-// 5|3|8|9|1|2|7|6|4
-// 1|6|2|4|3|7|5|9|8
-// 4|7|9|5|8|6|1|3|2
-// 3|4|5|6|2|9|8|7|1
-// 7|2|6|1|5|8|3|4|9
