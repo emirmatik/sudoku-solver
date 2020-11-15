@@ -6,4 +6,4 @@
 
 👌 With some little priority optimizations on the algorithm, I guess that it'll work 100% at every difficulties. <br/>
 
-![gif](https://im3.ezgif.com/tmp/ezgif-3-23e2aad90a84.gif)
+![gif](https://im3.ezgif.com/tmp/ezgif-3-ec4880cb08ec.gif)
